@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>R & R Financial Planners</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="flex items-center justify-between"> 
+        <a href="#home" class="nav-brand">
+          <span>R & R</span> Financial Planners Inc
+        </a>
+        
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#resources" class="nav-link">Resources</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        
+        <button class="menu-toggle" aria-label="Toggle Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link mobile-link active">Home</a></li>
+        <li><a href="#about" class="nav-link mobile-link">About</a></li>
+        <li><a href="#services" class="nav-link mobile-link">Services</a></li>
+        <li><a href="#process" class="nav-link mobile-link">Process</a></li>
+        <li><a href="#resources" class="nav-link mobile-link">Resources</a></li>
+        <li><a href="#reviews" class="nav-link mobile-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero section">
+    <div class="container">
+      <div class="hero-content text-center">
+        <h1>We Make <br>Dollar.<br>with Sense.</h1>
+        <p class="hero-desc">Personalized financial Planning to help you achieve your goals and secure your future with confidence.</p>
+        <a href="#contact" class="btn">Schedule Your Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>About Us</h2>
+        <div class="divider"></div>
+      </div>
+      
+      <div class="about-content">
+        <div class="advisor-img-container">
+          <div class="advisor-img-bg"></div>
+          <img 
+            src="https://images.unsplash.com/photo-1535448674466-81707cbfe0f7?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+            alt="Financial Advisor Portrait" 
+            class="advisor-img"
+          />
+        </div>
+        
+        <div>
+          <h3 class="advisor-name">R & R Financial Planners Inc</h3>
+          <p class="bio">
+            Founded in 1979, R&R Financial Planners, Inc. is an SEC Registered Investment Advisor with offices in New York and Florida. As a registered advisor, we adhere to the Investor Advisors Act of 1940, providing comprehensive services that meet the highest standards. Led by William V. Romeo, C.F.P.® and Nancy Praino, our team brings decades of experience in financial planning, helping clients across the country build secure financial futures.
+          </p>
+          <p class="bio">
+            At R&R Financial Planners, we simplify the complexity of financial planning. Our experts work closely with you to develop a personalized plan that suits your unique needs. We ask the right questions, evaluate the best strategies, and explain everything in clear terms. By continuously monitoring and managing your plan, we ensure you stay on track to reach your goals. This commitment to excellence and client-focused service sets us apart from other financial planning firms.
+          </p>
+          
+          <div class="values-grid">
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <h4 class="value-title">Fiduciary</h4>
+              <p class="value-desc">Always putting your interests first, with no conflicts of interest.</p>
+            </div>
+            
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="fas fa-glasses"></i>
+              </div>
+              <h4 class="value-title">Transparency</h4>
+              <p class="value-desc">Clear communication and full disclosure about fees and recommendations.</p>
+            </div>
+            
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h4 class="value-title">Partnership</h4>
+              <p class="value-desc">Working together to create and implement your unique financial strategy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services section">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Our Services</h2>
+        <div class="divider"></div>
+        <p>Comprehensive financial solutions tailored to your unique needs and goals.</p>
+      </div>
+      
+      <div class="services-grid">
+        <!-- Retirement Income -->
+        <div class="service-card">
+          <div class="service-content">
+            <div class="service-icon">
+              <i class="fas fa-piggy-bank"></i>
+            </div>
+            <h3 class="service-title">Retirement Income</h3>
+            <p class="service-desc">Developing sustainable withdrawal strategies to provide income throughout your retirement years.</p>
+            <ul class="service-features">
+              <li class="feature-item">
+                <i class="fas fa-check feature-icon"></i>
+                <span>Income planning</span>
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check feature-icon"></i>
+                <span>Distribution strategies</span>
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check feature-icon"></i>
+                <span>Longevity protection</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Investment Management -->
+        <div class="service-card">
+          <div class="service-content">
+            <div class="service-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3 class="service-title">Investment Management</h3>
+            <p class="service-desc">Building and maintaining a diversified portfolio aligned with your risk tolerance and goals.</p>
+            <ul class="service-features">
+              <li class="feature-item">
+                <i class="fas fa-check feature-icon"></i>
+                <span>Asset allocation</span>
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check feature-icon"></i>
+                <span>Risk management</span>
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check feature-icon"></i>
+                <span>Regular rebalancing</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Tax Strategies -->
+        <div class="service-card">
+          <div class="service-content">
+            <div class="service-icon">
+              <i class="fas fa-file-invoice-dollar"></i>
+            </div>
+            <h3 class="service-title">Tax Strategies</h3>
+            <p class="service-desc">Optimizing your investments and withdrawals to minimize tax impacts over your lifetime.</p>
+            <ul class="service-features">
+              <li class="feature-item">
+                <i class="fas fa-check feature-icon"></i>
+                <span>Tax-efficient investing</span>
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check feature-icon"></i>
+                <span>Distribution planning</span>
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check feature-icon"></i>
+                <span>Roth conversion analysis</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Social Security Optimization -->
+        <div class="service-card">
+          <div class="service-content">
+            <div class="service-icon">
+              <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <h3 class="service-title">Social Security Optimization</h3>
+            <p class="service-desc">Determining the optimal filing strategy to maximize your lifetime Social Security benefits.</p>
+            <ul class="service-features">
+              <li class="feature-item">
+                <i class="fas fa-check feature-icon"></i>
+                <span>Claiming strategies</span>
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check feature-icon"></i>
+                <span>Spousal benefits</span>
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check feature-icon"></i>
+                <span>Breakeven analysis</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Estate Planning -->
+        <div class="service-card">
+          <div class="service-content">
+            <div class="service-icon">
+              <i class="fas fa-scroll"></i>
+            </div>
+            <h3 class="service-title">Estate Planning</h3>
+            <p class="service-desc">Creating strategies to efficiently transfer your wealth and legacy to your beneficiaries.</p>
+            <ul class="service-features">
+              <li class="feature-item">
+                <i class="fas fa-check feature-icon"></i>
+                <span>Will & trust review</span>
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check feature-icon"></i>
+                <span>Beneficiary planning</span>
+              </li>
+              <li class="feature-item">
+                <i class="fas fa-check feature-icon"></i>
+                <span>Legacy strategies</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section id="process" class="process section">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Our Process</h2>
+        <div class="divider"></div>
+        <p>A structured approach to creating your personalized financial plan.</p>
+      </div>
+      
+      <div class="timeline">
+        <div class="timeline-step">
+          <div class="step-number">1</div>
+          <h3 class="step-title">Discovery</h3>
+          <p class="step-desc">Initial meeting to understand your goals, values and current situation.</p>
+        </div>
+        
+        <div class="timeline-step">
+          <div class="step-number">2</div>
+          <h3 class="step-title">Data Gathering</h3>
+          <p class="step-desc">Collect and analyze all relevant financial information and documents.</p>
+        </div>
+        
+        <div class="timeline-step">
+          <div class="step-number">3</div>
+          <h3 class="step-title">Plan Design</h3>
+          <p class="step-desc">Create a comprehensive financial strategy tailored to your goals.</p>
+        </div>
+        
+        <div class="timeline-step">
+          <div class="step-number">4</div>
+          <h3 class="step-title">Implementation</h3>
+          <p class="step-desc">Put your plan into action with a clear schedule of prioritized steps.</p>
+        </div>
+        
+        <div class="timeline-step">
+          <div class="step-number">5</div>
+          <h3 class="step-title">Review</h3>
+          <p class="step-desc">Regular meetings to track progress and adjust the plan as needed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources Section -->
+  <section id="resources" class="resources section">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Free Resources</h2>
+        <div class="divider"></div>
+        <p>Educational materials to help you make informed financial decisions.</p>
+      </div>
+      
+      <div class="resources-grid">
+        <div class="resource-card">
+          <div class="resource-content">
+            <div class="resource-icon">
+              <i class="fas fa-file-pdf"></i>
+            </div>
+            <h3 class="resource-title">Retirement Guide</h3>
+            <p class="resource-desc">A comprehensive guide to planning for a secure and fulfilling retirement.</p>
+            <a href="#" class="btn">Download</a>
+          </div>
+        </div>
+        
+        <div class="resource-card">
+          <div class="resource-content">
+            <div class="resource-icon">
+              <i class="fas fa-chart-pie"></i>
+            </div>
+            <h3 class="resource-title">Market Outlook</h3>
+            <p class="resource-desc">Our analysis of current market conditions and investment opportunities.</p>
+            <a href="#" class="btn">Download</a>
+          </div>
+        </div>
+        
+        <div class="resource-card">
+          <div class="resource-content">
+            <div class="resource-icon">
+              <i class="fas fa-calculator"></i>
+            </div>
+            <h3 class="resource-title">Budgeting Tool</h3>
+            <p class="resource-desc">An interactive spreadsheet to help you track expenses and save more effectively.</p>
+            <a href="#" class="btn">Download</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZCrAin5ycXA" title="Educational Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="reviews section">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Client Reviews</h2>
+        <div class="divider"></div>
+        <p>What our clients say about working with us.</p>
+      </div>
+      
+      <div class="testimonials">
+        <div class="testimonial-card active" data-index="0">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="quote">"R & R Financial Planners Inc has been our financial advisor for over 10 years. Their guidance has been invaluable as we navigated major life events, from buying our first home to planning for our children's education and now our retirement."</p>
+          <p class="client-name">David & Susan Thompson</p>
+          <p class="client-info">Clients since 2013</p>
+        </div>
+        
+        <div class="testimonial-card" data-index="1">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="quote">"As a small business owner, I needed someone who understood both my personal and business financial needs. R & R Financial Planners Inc created a comprehensive plan that protected my family while helping my business grow. I couldn't be happier with the results."</p>
+          <p class="client-name">Jennifer Lewis</p>
+          <p class="client-info">Client since 2017</p>
+        </div>
+        
+        <div class="testimonial-card" data-index="2">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="quote">"After approaching several financial advisors, I chose R & R Financial Planners Inc because of their transparent approach and fiduciary commitment. Five years later, I can say it was one of the best financial decisions I've ever made. They've helped me prepare for a retirement I didn't think was possible."</p>
+          <p class="client-name">Robert Chen</p>
+          <p class="client-info">Client since 2018</p>
+        </div>
+        
+        <div class="testimonial-nav">
+          <div class="nav-dot active" data-index="0"></div>
+          <div class="nav-dot" data-index="1"></div>
+          <div class="nav-dot" data-index="2"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Contact Us</h2>
+        <div class="divider"></div>
+        <p>Reach out to schedule your consultation or ask any questions.</p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.7621125859116!2d-73.5704294!3d40.7312449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e833c5c93b2d3f%3A0x81a963ce6060ec34!2s1802%20Hempstead%20Turnpike%2C%20East%20Meadow%2C%20NY%2011554!5e0!3m2!1sen!2sus!4v1678322353235!5m2!1sen!2sus"></iframe>
+          </div>
+          
+          <div class="address">
+            <h3 class="address-title">New York HeadQuarter</h3>
+            <p class="address-line">1802 Hempstead Turnpike</p>
+            <p class="address-line"> East Meadow, NY 11554</p>
+            <p class="address-line">Phone: (832) 5828806</p>
+            <p class="address-line">Email: info@randrfinancialplanners.com</p>
+          </div>
+          
+          <div class="access-info" id="accessibility-toggle">
+            <i class="fas fa-wheelchair wheelchair-icon jiggle"></i>
+            <span>Accessibility Information</span>
+            
+            <div class="accessibility-popup" id="accessibility-popup">
+              <button class="close-popup" id="close-popup"></button>
+              <p>Our office is wheelchair-accessible. Please let us know how we can assist you. Click <span style="color: red;">here</span> to cancel</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info">
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.7621125859116!2d-73.5704294!3d40.7312449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e833c5c93b2d3f%3A0x81a963ce6060ec34!2s245%20NE%2021st%20Ave%20Suite%20302%2C%20Deerfield%20Beach%2C%20FL%2033441!5e0!3m2!1sen!2sus!4v1678322353235!5m2!1sen!2sus"></iframe>
+          </div>
+          
+          <div class="address">
+            <h3 class="address-title">Florida Office:</h3>
+            <p class="address-line">245 NE 21st Ave Suite 302</p>
+            <p class="address-line"> Deerfield Beach, FL 33441</p>
+            <p class="address-line">Phone: (754) 227-5490</p>
+            <p class="address-line">Email: info@randrfinancialplanners.com</p>
+          </div>
+          
+          <div class="access-info" id="accessibility-toggle1">
+            <i class="fas fa-wheelchair wheelchair-icon jiggle"></i>
+            <span>Accessibility Information</span>
+            
+            <div class="accessibility-popup" id="accessibility-popup1">
+              <button class="close-popup" id="close-popup1"></button>
+              <p>Our office is wheelchair-accessible. Please let us know how we can assist you. Click <span style="color: red;">here</span> to cancel</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-container">
+        <form class="contact-form" id="contact-form" action="#" method="POST">
+          <h1 class="form-title">Send Us a Message</h1>
+          <div class="divider"></div>
+
+          <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" class="form-control" required>
+            <span class="error-message" id="name-error">Please enter your name</span>
+          </div>
+      
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" class="form-control" required>
+            <span class="error-message" id="email-error">Please enter a valid email address</span>
+          </div>
+      
+          <div class="form-group">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="tel" id="phone" class="form-control" required>
+            <span class="error-message" id="phone-error">Please enter a valid phone number</span>
+          </div>
+      
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" class="form-control" required></textarea>
+            <span class="error-message" id="message-error">Please enter your message</span>
+          </div>
+      
+          <button type="submit" class="form-button">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div class="footer-brand">
+            <span>R & R</span> Financial Planners Inc
+          </div>
+          <p class="footer-desc">Providing trusted financial guidance to help individuals and families achieve their financial goals for over 10 years.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="footer-links-title">Quick Links</h3>
+          <div class="footer-links">
+            <a href="#home" class="footer-link">Home</a>
+            <a href="#about" class="footer-link">About</a>
+            <a href="#services" class="footer-link">Services</a>
+            <a href="#process" class="footer-link">Process</a>
+            <a href="#resources" class="footer-link">Resources</a>
+            <a href="#reviews" class="footer-link">Reviews</a>
+            <a href="#contact" class="footer-link">Contact</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> R & R Financial Planner. All rights reserved. | CFP® Professional</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <div class="back-to-top" id="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="./app.js"></script>
+</body>
+</html>
